@@ -1,0 +1,28 @@
+package myprograms;
+
+import java.util.LinkedList;
+public class LinekdListPrograms {
+
+	public static void main(String[] args) {
+    LinkedList<String> list = new LinkedList<>();
+        
+        // Add elements to the list
+        list.add("red");
+        list.add("Green");
+        list.add("black");
+        
+        list.addFirst("blue");
+        list.addLast("White");
+
+        // Print the list
+        System.out.println("LinkedList: " + list);
+        
+        // Remove an element
+        list.remove("red");
+        System.out.println("After removing red: " + list);
+
+        // Access an element
+        System.out.println("First element: " + list.getFirst());
+    }
+}
+		
