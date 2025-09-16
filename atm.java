@@ -1,0 +1,20 @@
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+        Scanner sc =new Scanner(System.in);
+        int amount =sc.nextInt();
+        
+        int[] notes={500,100,50,20,10,4,2,1};
+        int[] count= new int[8];
+        
+        for(int  i=0;i<notes.length;i++){
+            count[i] = amount / notes[i];
+            amount = amount % notes[i];
+        }
+        System.out.println("Total number of notes:");
+        for(int i=0;i<notes.length;i++){
+        System.out.println(notes[i] + " : " +count[i]);
+        }
+        sc.close();
+    }
+}
